@@ -1,0 +1,75 @@
+* {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+QLineEdit,
+QDateEdit {
+  border: 1px solid #bbb;
+  outline: none;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 6px 10px;
+}
+
+QLineEdit:focus,
+QDateEdit:focus {
+  border: 1px solid #03a9fc;
+}
+
+QPushButton {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: #03a9fc;
+  color: #fff;
+  border-radius: 4px;
+  padding: 6px 10px;
+}
+
+QPushButton:hover {
+  background-color: #3fb6f2;
+}
+
+QPushButton:pressed {
+  background-color: #0c7bb3;
+}
+
+QPushButton:disabled {
+  background-color: #63a7ca;
+}
+
+QDateEdit::drop-down {
+  width: 0px;
+  border: none;
+}
+
+#headerLabel {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+#folderIconButton {
+  padding: 6px;
+  background: transparent;
+  border: 1px solid #03a9fc;
+}
+
+#exportExcelButton {
+  background-color: #00ee2c;
+}
+
+
+#exportExcelButton:hover {
+  background-color: #43f464;
+}
+
+
+#exportExcelButton:pressed {
+  background-color: #06b927;
+}
+
+
+#exportExcelButton:disabled {
+  background-color: #65b274;
+}
