@@ -19,9 +19,6 @@ import sys
 from pathlib import Path
 from dotenv import load_dotenv
 
-
-
-
 from app.services.mongo_adaptor import MongoAdaptor
 from app.services.check_dir import checkDir
 from app.services.verify_pdfs import VerifyPDFsWorker
@@ -32,7 +29,7 @@ def get_env_path() -> Path:
         # PyInstallerで実行されている場合
         base_dir = Path(sys._MEIPASS)
     else:
-        # app/pages/page.py → project/
+        # app/pages/certification_page.py → project/
         base_dir = Path(__file__).resolve().parents[2]
 
     return base_dir / ".env"
